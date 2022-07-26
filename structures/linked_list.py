@@ -19,6 +19,8 @@ class LinkedList(object):
             :param arr:
             :return LinkedList:
             """
+            if not arr:
+                return None
             head = ListNode(arr[0])
             temp = head
             for i in range(1, len(arr)):
